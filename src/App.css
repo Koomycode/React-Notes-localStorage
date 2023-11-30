@@ -1,0 +1,122 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 800px;
+  height: 700px;
+  border: 2px solid #888;
+  margin: 0 auto;
+}
+
+.app.empty {
+  flex-direction: column;
+}
+
+.empty-btn {
+  padding: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 30%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sidebar-title {
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  padding: 0 10px;
+}
+
+.note-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.add-btn {
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+}
+
+.editor {
+  width: 70%;
+  border-left: 5px solid #FFF;
+  height: 100%;
+}
+
+.note {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  justify-content: start;
+  padding: 0 10px;
+  cursor: pointer;
+  background: #333;
+  justify-content: space-between;
+}
+
+.note.selected {
+  background: #000;
+}
+
+.delete-btn {
+  width: 20px;
+  cursor: pointer;
+}
+
+.editor-note {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+hr {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.editor-note-title, .editor-note-body {
+  width: 100%;
+  height: 6%;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  resize: none;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.editor-note-body {
+  height: 74%;
+}
